@@ -69,8 +69,10 @@ You have 8 weeks (roughly) to finish the project. Sketch out a rough schedule fo
 
 Collaboration plan: 
 How do you plan to collaborate with your teammates on this project? Will you split tasks up, complete them independently, and then integrate? Will you pair program the entire thing? Make sure to articulate your plan for successfully working together as a team. This might also include information about any software development methodologies you plan to use (e.g. agile development). Make sure to make clear why you are choosing this particular organizational structure.
+
 We will delegate different tasks to be completed and bring them together at each step of the process. We will split up the work rather than pair program the entire project because of different time zones and schedules. Initially, our collaboration plan is to determine certain tasks that are best suited for each of us and set meeting times throughout the course of the project where we will bring everything together. These meetings will at a minimum be once a week to ensure that our work fits cohesively. This will also allow us to help each other along the way if someone gets stuck or we need to pivot before we’ve done too much in a particular direction.
         Risks: What do you view as the biggest risks to the success of this project?
             1. Limitation of data (search may not work for every single place in the world)
             2. Additional Course Content: What are some topics that we might cover in class that you think would be especially helpful for your project?
+            
 Some additional course content that may be helpful for our project are creating a web app using flask and text analysis. Creating a web app using flask will be beneficial for making our final product user-friendly. Understanding text analysis in python will allow us to execute our language translation idea -- there will be a framework that provides the user the opportunity to translate basic phrases and words into the native language of the given destination.
