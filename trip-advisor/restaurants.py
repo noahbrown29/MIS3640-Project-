@@ -1,3 +1,6 @@
+# WHAT WE NEED TO CHANGE TO MAKE THIS WORK FOR US:
+# 1. The user needs to be able to input any city and the driver should automatically pull up results (currently requires manual input of url)
+
 """
 Install webdriver-manager in Command Prompt
 pip install webdriver-manager

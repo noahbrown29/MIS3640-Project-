@@ -1,3 +1,8 @@
+# WHAT WE NEED TO CHANGE TO MAKE THIS WORK FOR US:
+# 1. The user needs to be able to input any word or phrase
+# 2. The program should return the detected language
+# 3. Is it possible after the program returns the detected language to then ask the user if they want the input word or phrase translated (connect it to translator.py)?
+
 """
 Install googletrans API in Command Prompt
 pip install googletrans==3.1.0a0
