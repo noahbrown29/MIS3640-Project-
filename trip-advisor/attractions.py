@@ -18,10 +18,11 @@ path_to_file = "/Users/gius/Desktop/reviews.csv"
 
 # default number of scraped pages
 num_page = 10
-
+CITY_NAME = input('What is the city name?: ')
+ATTRACTION_NAME = input('What attraction are you looking to see?: ') 
 # default tripadvisor website of hotel or things to do (attraction/monument) 
-url = "https://www.tripadvisor.com/Hotel_Review-g60763-d1218720-Reviews-The_Standard_High_Line-New_York_City_New_York.html"
-#url = "https://www.tripadvisor.com/Attraction_Review-g187791-d192285-Reviews-Colosseum-Rome_Lazio.html"
+# url = f'https://www.tripadvisor.com/Hotel_Review-g60763-d1218720-Reviews-{ATTRACTION_NAME}-{CITY_NAME}.html'
+url = f'https://www.tripadvisor.com/Attraction_Review-g187791-d192285-{ATTRACTION_NAME}-{CITY_NAME}.html'
 
 # if you pass the inputs in the command line
 if (len(sys.argv) == 4):
