@@ -1,6 +1,10 @@
- 
-# Install googletrans API in Command Prompt
-# pip install googletrans==3.1.0a0
+# WHAT WE NEED TO CHANGE TO MAKE THIS WORK FOR US:
+# 1. The user needs to be able to input any word or phrase AND select the language they want the program to translate it to
+
+"""
+Install googletrans API in Command Prompt
+pip install googletrans==3.1.0a0
+"""
 
 import googletrans
 from googletrans import Translator
