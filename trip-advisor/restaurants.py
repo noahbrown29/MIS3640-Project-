@@ -1,5 +1,7 @@
-# Install webdriver-manager in Command Prompt
-# pip install webdriver-manager
+"""
+Install webdriver-manager in Command Prompt
+pip install webdriver-manager
+"""
 
 import sys
 import csv

@@ -1,6 +1,7 @@
- 
-# Install googletrans API in Command Prompt
-# pip install googletrans==3.1.0a0
+"""
+Install googletrans API in Command Prompt
+pip install googletrans==3.1.0a0
+"""
 
 import googletrans
 from googletrans import Translator
