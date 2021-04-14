@@ -7,9 +7,20 @@ Make sure chromedriver is installed (Below is the correct link for windows compu
 https://chromedriver.storage.googleapis.com/89.0.4389.23/chromedriver_win32.zip
 """
   
+# from selenium import webdriver
+# import time
+# from selenium.webdriver.common.keys import Keys
+# import os
 from selenium import webdriver
-import time
-  
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import Select
+from selenium.common.exceptions import NoSuchElementException
+import unittest, time, re,datetime,os,sys
+
+from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.common.action_chains import ActionChains
+
+
 # Taking input from user
 search_string = input("Input the URL or string you want to search for: ")
   
@@ -20,9 +31,11 @@ search_string = search_string.replace(' ', '+')
 # Assigning the browser variable with chromedriver of Chrome.
 # Any other browser and its respective webdriver 
 # like geckodriver for Chrome can be used
-browser = webdriver.Chrome('chromedriver')
+driver = webdriver.Chrome('chromedriver')
   
 for i in range(1):
-    matched_elements = browser.get("https://www.google.com/search?q=" +
+    matched_elements = driver.get("https://www.google.com/search?q=" +
                                      search_string + "&start=" + str(i))
 
+
+driver.find_elements_by_tag_name('h3').send_keys("\n")
