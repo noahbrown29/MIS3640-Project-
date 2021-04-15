@@ -17,13 +17,14 @@ app = Flask(__name__)
 def home():
     return render_template("index.html")
 
-@app.route("/info", methods = ["POST", "GET"])
 
+@app.route("/info", methods=["POST", "GET"])
 def info():
     city = request.args.get("city")
     country = request.args.get("country")
     exchangerate, temperature, feels_like, time = main(city, country)
-    return render_template("info.html", exchangerate = exchangerate, temperature = temperature, feels_like = feels_like, time = time)
+    return render_template("info.html", exchangerate=exchangerate, temperature=temperature, feels_like=feels_like, time=time)
+
 
 def weather(city_name):
     APIKEY = '3b46a7354bd3fe80c56d46f63a46a5dc'
@@ -74,6 +75,7 @@ def main(city, country):
     temperature, feels_like = weather(city_name)
 
     return exchangerate, temperature, feels_like, current_time
+
 
 if __name__ == "__main__":
     app.run(debug=True)
