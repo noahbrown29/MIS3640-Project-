@@ -41,7 +41,7 @@ def exchangerates(country_currency):
     try:
         exchange_rate = c.get_rate('USD', country_currency)
     except:
-        exchange_rate = "Not Available :("
+        exchange_rate = "Sorry, the Exchange Rate is Currently Not Available :("
     return exchange_rate
 
 
@@ -64,12 +64,12 @@ def main(city, country):
         current_time = time(timezone)
         current_time = current_time.strftime('%Y:%m:%d %H:%M:%S')
     except:
-        current_time = "Not Available :("
+        current_time = "Sorry, the Current Time is Not Available :("
     try:
         country_currency = ccy.countryccy(country.alpha_2)
         exchangerate = exchangerates(country_currency)
     except:
-        exchangerate = "Not Available :("
+        exchangerate = "Sorry, the Exchange Rate is Currently Not Available :("
 
     temperature, feels_like = weather(city_name)
 
