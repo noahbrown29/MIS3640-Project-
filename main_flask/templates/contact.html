@@ -18,7 +18,7 @@
       name="author"
       content="Cristina Toledo, Noah Brown, Julia Realander"
     />
-    <title>Travel</title>
+    <title>Contact</title>
     <style>
       body {
         background-color: #03989e;
@@ -70,14 +70,27 @@
         color: white;
       }
 
+      #countries {
+        float: right;
+      }
+
+      #contact1 {
+        width: 100%;
+        height: 180px;
+      }
+
+      #contact2 {
+        width: 100%;
+        height: 180px;
+      }
+
       #original-form {
         margin-left: auto;
         margin-right: auto;
+        width: 50%;
         font-family: "ABeeZee";
         color: white;
-        float: center;
-        width: 40%;
-        margin-top: 8px;
+        text-align: center;
         margin-bottom: 5px;
       }
 
@@ -92,27 +105,37 @@
         font-size: xx-large;
         color: #005365;
         font-family: "bebas neue";
+        text-align: left;
+      }
+
+      #message {
+        font-family: "ABeeZee";
+      }
+
+      #bold {
+        font-weight: bold;
+        color: #005365;
       }
 
       #buttons {
+        float: center;
         text-align: center;
-        margin-bottom: 8px;
       }
 
-      #countries {
+      #name {
+        float: left;
+      }
+
+      #email {
         float: right;
       }
-
-      #mountain {
-        width: 100%;
-        height: 225px;
-      }
-      #desert {
-        width: 100%;
-        height: 225px;
+      .message {
+        float: left;
+        text-align: left;
       }
     </style>
   </head>
+
   <body>
     <div class="header">
       <img
@@ -131,40 +154,66 @@
     <ul id="navbar">
       <li><a class="active" href="index.html">Home</a></li>
       <li><a href="form.html">Travel</a></li>
+      <li><a href="aboutus.html">About </a></li>
+      <li><a href="contact.html">Contact</a></li>
     </ul>
-    <img
-      src="/images/travel1.png"
-      alt="mountain"
-      title="mountain"
-      id="mountain"
-    />
-    <form action="/info" method="GET" id="original-form">
+    <img src="/images/contact1.png" alt="ocean" title="ocean" id="contact1" />
+
+    <form id="original-form">
       <fieldset>
-        <legend>Choose Your Destination!</legend>
-        <label for="city">City:</label>
-        <input
-          type="text"
-          name="city"
-          maxlength="100"
-          placeholder="Enter a city..."
-        />
-        <div id="countries">
-          <label for="country">Country:</label>
+        <legend>Contact Us:</legend>
+        <div id="name">
+          <lable for="Name">Name:</lable>
           <input
-            id="country"
             type="text"
-            name="country"
-            maxlength="100"
-            placeholder="Enter a country..."
+            id="Name"
+            name="name"
+            maxlength="150"
+            placeholder="Enter your name here"
+          />
+        </div>
+        <div id="email">
+          <lable for="email">Email Address:</lable>
+          <input
+            type="text"
+            id="Email adress"
+            name="email"
+            maxlength="300"
+            placeholder="Enter your email address here"
           />
         </div>
         <br />
+        <div class="message">
+          <div class="message">
+            <label for="comments">Message:</label>
+          </div>
+          <div>
+            <textarea
+              id="message"
+              name="comments"
+              rows="5"
+              columns="150"
+              placeholder="Enter your message here..."
+            ></textarea>
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              id="updates"
+              name="updates"
+              value="updates"
+              checked
+            />
+            <label for="updates">Sign me up for email updates</label>
+          </div>
+          <br />
+          <div id="buttons">
+            <input type="submit" value="Submit" name="submit" id="submit-btn" />
+            <input type="reset" value="Reset" name="reset" />
+          </div>
+        </div>
       </fieldset>
-      <div id="buttons">
-        <input type="submit" value="Submit" name="submit" id="submit-btn" />
-        <input type="reset" value="Reset" name="reset" />
-      </div>
     </form>
-    <img src="/images/travel2.png" alt="desert" title="desert" id="desert" />
+    <img src="/images/contact2.png" alt="leaves" title="leaves" id="contact2" />
   </body>
 </html>
